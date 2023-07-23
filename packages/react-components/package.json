@@ -4,6 +4,7 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
+  "private": false,
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
     "generate:component": "turbo gen react-component"
