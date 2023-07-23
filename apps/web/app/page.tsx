@@ -1,4 +1,4 @@
-import { Button, Header } from "ui";
+import { Button, Header } from "@nlpz/react-components";
 
 export default function Page() {
   return (
