@@ -1,12 +1,21 @@
 {
   "name": "@nlpz/utils",
   "version": "0.0.0",
+  "author": "@noel-lopez",
+  "license": "MIT",
+  "private": false,
   "description": "",
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "build": "tsup src/index.ts --format cjs --format cjs --dts",
+    "build": "tsup src/index.ts --format cjs --dts",
     "dev": "pnpm run build -- --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,8 +25,5 @@
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2",
     "tsup": "^7.1.0"
-  },
-  "author": "",
-  "license": "MIT",
-  "private": false
+  }
 }
